@@ -56,7 +56,57 @@
 ### Step 11:
   Stop
 # Program:
+```c
+#include <stdio.h>
+
+int main()
+{
+    float math, science, english, average;
+
+    printf("Enter Math marks: ");
+    scanf("%f", &math);
+
+    printf("Enter Science marks: ");
+    scanf("%f", &science);
+
+    printf("Enter English marks: ");
+    scanf("%f", &english);
+
+    average = (math + science + english) / 3.0f;
+
+    printf("Average Marks: %.2f\n", average);
+
+    if (average >= 90.0f)
+    {
+        printf("Grade: A");
+    }
+    else
+    {
+        if (average >= 75.0f)
+        {
+            printf("Grade: B");
+        }
+        else
+        {
+            if (average >= 50.0f)
+            {
+                printf("Grade: C");
+            }
+            else
+            {
+                printf("Grade: F");
+            }
+        }
+    }
+
+    return 0;
+}
+
+```
 # Output:
+
+<img width="1563" height="706" alt="image" src="https://github.com/user-attachments/assets/df9cbe01-84e9-4575-a388-f91e82993e24" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
